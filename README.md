@@ -7,8 +7,7 @@ fun main(){
     //verifAge()
     //gradoEscolar()
     //GradoEscolar()
-    //Triangulo()
-    tipoDeDato()
+    
 }
 fun verifAge(){
     print ("Ingrese edad y precione enter(escribe solo el numero):")
@@ -52,31 +51,4 @@ fun GradoEscolar() {
 
 }
 
-fun Triangulo() {
 
-    println("Ingresa el valor del lado 1\n")
-    val lado1 = readLine()?.toInt()
-    println("Ingresa el valor del lado 2\n")
-    val lado2 = readLine()?.toInt()
-    println("Ingresa el valor del lado 3\n")
-    val lado3 = readLine()?.toInt()
-
-    if (lado1 == lado2 && lado2 == lado3) {
-        println("El triangulo es equilatero")
-    } else if (lado1 == lado2 && lado2 != lado3 || lado3 == lado1 && lado2 != lado1) {
-        println("El triangulo es isoceles")
-    } else {
-        println("El triangulo es escaleno")
-    }
-}
-
-fun tipoDeDato(dato: Any){
-
-    when(dato){
-        is String -> println("Es una String")
-        is Int -> println("Es un Entero")
-        is Double -> println("Es un Double")
-        else -> println("Tipo de dato no soportado")
-
-    }
-}
