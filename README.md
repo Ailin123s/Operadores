@@ -1,8 +1,7 @@
 # Operadores
 Operadores if y when
+
 package com.example.myapplication
-
-
 
 fun main(){
     //verifAge()
